@@ -61,9 +61,6 @@
   bottom: 0;
   right: 0;
   z-index: 1;
-}
-
-.header__img {
   width: 765px;
   height: 608px;
 }
@@ -146,11 +143,12 @@
   width: 60%;
   margin: 0 auto;
   padding: 0;
-  z-index: 1;
 }
 
 .section-title_theme_dark {
   line-height: 69px;
+  position: relative;
+  z-index: 1; /*Почему-то без position: relative не работает ???*/
 }
 
 .section-subtitle {
@@ -161,7 +159,11 @@
   width: 60%;
   margin: 20px auto 0;
   padding: 0;
-  z-index: 1;
+}  
+
+.section-subtitle_theme_dark {
+  position: relative;
+  z-index: 1; 
 }
 
 .table {
@@ -266,6 +268,7 @@
   height: 877px;
   top: 0;
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
 }
 
 .footer {
@@ -280,12 +283,13 @@
 .footer__columns {
   width: 90%;
   margin: 0 auto;
-}
-
-.footer__column {
   display: flex;
   justify-content: space-between;
 }
+
+/* .footer__column {
+
+} */
 
 .footer__column_content_copyright {
   flex-basis: 711px;
