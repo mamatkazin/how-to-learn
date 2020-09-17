@@ -28,7 +28,7 @@
         <div class="header__square-pic rotation"></div>
       </header>
       <main class="content">
-        <section class="description">
+        <article class="description">
           <div class="two-columns">
             <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
             <div class="two-columns__main-text">
@@ -51,7 +51,7 @@
               </p>
             </div>
           </div>
-        </section>
+        </article>
 
         <section class="techniques">
           <h2 class="section-title">Техники обучения</h2>
@@ -135,7 +135,7 @@
           </div>
         </section>
 
-        <section class="oakley">
+        <article class="oakley">
           <div class="two-columns">
             <h2 class="two-columns__brief">История Барбары Оакли.</h2>
             <div class="two-columns__main-text">
@@ -151,7 +151,7 @@
               </p>
             </div>
           </div>
-        </section>
+        </article>
 
         <section class="feynman">
           <h2 class="feynman__title">Метод Фейнмана</h2>
@@ -212,15 +212,22 @@
           <div class="khan__container">
             <p class="khan__author">Салман Хан</p>
             <h2 class="khan__title">Весь мир — школа</h2>
-            <p class="khan__quote">
-              Страсть и новаторство Сала Хана меняют процесс обучения миллионов
-              студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать
-              всем, кто занимается образованием — так учащиеся повсюду смогут
-              получить навыки и знания, которые приносят успех в школе, карьере
-              и жизни.
-            </p>
-            <p class="khan__quote-author">Джордж Лукас</p>
-            <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+            <blockquote class="khan__quote" cite="#">
+              <p class="khan__quote-text">
+                Страсть и новаторство Сала Хана меняют процесс обучения
+                миллионов студентов по всему миру. Книгу «Весь мир — школа»
+                нужно прочитать всем, кто занимается образованием — так учащиеся
+                повсюду смогут получить навыки и знания, которые приносят успех
+                в школе, карьере и жизни.
+              </p>
+              <footer class="khan__quote-footer">
+                <p class="khan__quote-author">Джордж Лукас</p>
+                <cite class="khan__quote-author-subline">
+                  Кинорежиссер, продюсер
+                </cite>
+              </footer>
+            </blockquote>
+
             <div class="khan__book-container">
               <img
                 class="khan__book-pic"
@@ -298,10 +305,18 @@
             Больше материалов о техниках и лайфхаках обучения
           </p>
           <ul class="resources__logo-zone">
-            <li class="resources__logo resources__logo_image_arzamas"></li>
-            <li class="resources__logo resources__logo_image_n1"></li>
-            <li class="resources__logo resources__logo_image_strelka"></li>
-            <li class="resources__logo resources__logo_image_polka"></li>
+            <li class="resources__logo resources__logo_image_arzamas">
+              <a href="#" class="resources__logo-link"></a>
+            </li>
+            <li class="resources__logo resources__logo_image_n1">
+              <a href="#" class="resources__logo-link"></a>
+            </li>
+            <li class="resources__logo resources__logo_image_strelka">
+              <a href="#" class="resources__logo-link"></a>
+            </li>
+            <li class="resources__logo resources__logo_image_polka">
+              <a href="#" class="resources__logo-link"></a>
+            </li>
           </ul>
         </section>
       </main>
@@ -319,7 +334,7 @@
               <li><a class="footer__column-link" href="#">Наставники</a></li>
             </ul>
           </nav>
-          <div class="footer__column footer__column_content_social">
+          <nav class="footer__column footer__column_content_social">
             <h2 class="footer__column-heading">Соцсети</h2>
             <ul class="footer__column-links">
               <li>
@@ -353,7 +368,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
       </footer>
     </div>

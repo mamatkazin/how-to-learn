@@ -5,6 +5,7 @@
   font-weight: normal;
   text-decoration: none;
   transition: opacity 1s linear;
+  align-self: flex-start;
 }
 
 .khan__buy-link::after {
